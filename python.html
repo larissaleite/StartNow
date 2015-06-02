@@ -1,6 +1,162 @@
-sudo easy_install pip
-sudo pip install virtualenv
-sudo pip install django
-django-admin.py startproject <projectname>
-  //this create new folder for the projectname with the initial django files
-python manage.py startapp <appname>
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	<link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/vectory-bonus-1/40/time_start-512.png">
+
+	<link rel="stylesheet" href="images/devicon-master/devicon.css">
+	<link rel="stylesheet" href="images/devicon-master/devicon-colors.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<title>StartNow</title>
+
+</head>
+
+<style type="text/css">
+	body {
+		font-family: 'Raleway', serif;
+		background-color: #1f272a;
+		color: #43a6e9;
+	}
+
+	.title {
+		font-family: 'Pacifico', cursive;
+	}
+
+	h3 > img {
+		width: 20%;
+		margin-right: 1%;
+		padding-bottom: 6%;
+	}
+
+	.devicon-python-plain-wordmark.colored {
+	  color: #43a6e9;
+	  font-size: 12rem;
+	  margin-left: 33%;
+	}
+
+	.python-logo-div {
+		margin-top: 3%;
+	}
+
+	#logo-link {
+		text-decoration: none;
+	}
+
+	.content {
+		margin-top: 5%;
+	}
+
+	.panel-body {
+		background-color: #1f272a;
+	}
+
+	.panel-heading {
+		background-color: #1f272a !important;
+		color: #59636b !important;
+	}
+
+	.panel-title > a > span {
+		float: right;
+		margin-left: 1%;
+	}
+
+	.label-custom {
+		background-color: rgba(255,255,255,.9);
+		color: #43a6e9;
+	}
+
+	.panel-body {
+		font-family: monospace;
+	}
+</style>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<a id="logo-link" href="index.html"><h3 class="title"><img src="https://cdn4.iconfinder.com/data/icons/vectory-bonus-1/40/time_start-512.png">StartNow</h3></a>
+			</div>
+			<div class="col-sm-10 python-logo-div">
+				<i class="devicon-python-plain-wordmark colored"></i>
+			</div>
+		</div><!-- .row -->
+
+		<div class="row">
+			<div class="col-sm-1"></div>
+
+			<div class="col-sm-10 content">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Setting up Python and MySQL on Mac OS X <span class="label label-custom">MySQL</span><span class="label label-custom">Mac OS X</span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				        pip install sqlalchemy
+				        <br/>
+						after mysqldb error:
+						<br/>
+						export PATH=$PATH:/usr/local/mysql/bin
+						<br/>
+						after libmysqlclient error:
+						<br/>
+						export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+						<br/>
+						Link: <a href="http://blog.theshayan.com/2013/11/26/djangomysql-on-mac-os-x-mountain-lion/">Django MySQL Mac OS X</a>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+			<div class="col-sm-1"></div>
+		
+		</div> <!-- .row -->
+	</div>	<!-- .container -->
+</body>
+
+
+</html>
