@@ -2,105 +2,193 @@
 
 <head>
 
-<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/github.css">
-<title>StartNow</title>
+	<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	<link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/vectory-bonus-1/40/time_start-512.png">
+
+	<link rel="stylesheet" href="images/devicon-master/devicon.css">
+	<link rel="stylesheet" href="images/devicon-master/devicon-colors.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<title>StartNow</title>
+
 </head>
 
+<style type="text/css">
+	body {
+		font-family: 'Raleway', serif;
+		background-color: #1f272a;
+		color: #43a6e9;
+	}
+
+	.title {
+		font-family: 'Pacifico', cursive;
+	}
+
+	h3 > img {
+		width: 20%;
+		margin-right: 1%;
+		padding-bottom: 6%;
+	}
+
+	.devicon-git-plain-wordmark.colored {
+	  color: #43a6e9;
+	  font-size: 12rem;
+	  margin-left: 33%;
+	}
+
+	.git-logo-div {
+		margin-top: 3%;
+	}
+
+	#logo-link {
+		text-decoration: none;
+	}
+
+	.content {
+		margin-top: 5%;
+	}
+
+	.panel-body {
+		background-color: #1f272a;
+	}
+
+	.panel-heading {
+		background-color: #1f272a !important;
+		color: #59636b !important;
+	}
+
+	.panel-title > a > span {
+		float: right;
+		margin-left: 1%;
+	}
+
+	.label-custom {
+		background-color: rgba(255,255,255,.9);
+		color: #43a6e9;
+	}
+
+	.instruction {
+		font-family: monospace;
+		color: white;
+	}
+</style>
 
 <body>
-	<div id="content">
-		<div id="cover-header">
-			<div class="masthead clearfix">
-	            <div class="inner">
-	              <h2 class="masthead-brand">StartNow</h2>
-	              <ul class="nav masthead-nav">
-	                <li><a href="index.html">Home</a></li>
-	                <li class="active"><a href="#">GitHub</a></li>
-	                <li><a href="#">Python</a></li>
-	              </ul>
-	            </div>
-	        </div>
-	    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<a id="logo-link" href="index.html"><h3 class="title"><img src="https://cdn4.iconfinder.com/data/icons/vectory-bonus-1/40/time_start-512.png">StartNow</h3></a>
+			</div>
+			<div class="col-sm-10 git-logo-div">
+				<i class="devicon-git-plain-wordmark colored"></i>
+			</div>
+		</div><!-- .row -->
 
-	    <div id="github-tutorial">
-	    	<h3>How to start?</h3>
-	    	<br>
+		<div class="row">
+			<div class="col-sm-1"></div>
 
-	    	<div id="github-guide">
-		    	<a href="#new-repository">New Repository</a>
-		    	<br>
-		    	<a href="#existing-repo">Existing Repository</a>
-		    	<br>
-		    	<a href="#github-pages">GitHub Pages</a>
-		    	<br>
-		    </div>
+			<div class="col-sm-10 content">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Clone Repository <span class="label label-custom">GitHub</span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+						<p>Create repository in https://github.com/&lt;username&gt;</p>
+						<p>In the command line, go to the folder where you want to create your repository folder</p>
+						<p class="instruction">> git clone https://github.com/&lt;username&gt;/&lt;repository name&gt;.git</p>
+						<p>Add and edit a README file:</p>
+						<p class="instruction">> touch README.md</p>
+						<p class="instruction">> vi README.md</p>
+						<p>Make your first commit:</p>
+						<p class="instruction">> git add README.md</p>
+						<p class="instruction">> git commit -m "First commit"</p>
+						<p class="instruction">> git push origin master</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          New Repository from the Command Line<span class="label label-custom">GitHub</span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+						<p>Create repository in https://github.com/&lt;username&gt;</p>
+						<p>Create folder in your local machine, with the same name as the repository</p>
+						<p>Reach the folder using the command line and the type the following:
+						<p class="instruction">> git --global user.name &lt;username&gt;</p>
+						<p class="instruction">> git --global user.email &lt;email&gt;</p>
+						<p>This command is useful so that you don't have to type in your username and password everytime you push new changes</p>
+						<p class="instruction">> git init</p>
+						<p class="instruction">> git remote add origin https://github.com/&lt;username&gt;/&lt;repository name&gt;</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Creating Branches <span class="label label-custom">GitHub</span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				        <p>Branches can be created either from the command line or on GitHub</p>
+				        <h4>1. Creating branches on GitHub</h4>
+				        <p>Create new branch in https://github.com/&lt;username&gt;/&lt;repository name&gt;</p>
+				        <p>For you local repository to become aware of the new branch created, using the command line, type:</p>
+				        <p class="instruction">> git fetch</p>
+				        <p>To switch to the created branch:</p>
+				        <p class="instruction">> git checkout &lt;branch name&gt;</p>
+				        <p>To merge with master (get changes from master):</p>
+				        <p class="instruction">> git merge master</p>
 
-	    	<div id="new-repository" class="step">
-		    	<h4>New Repository</h4>
-		    	<br>
-		    	<p>1. Create repository in https://github.com/&lt;username&gt;</p>
-		    	<p>2. Create folder in the local machine, preferrably with the same name as the repository</p>
-		    	<p>3. Reach the folder using the command line and then type the following:</p>
-		    	<div class="instruction-subtitle">
-			    	<p>git --global user.name "&lt;username&gt;"</p>
-			    	<p>git --global user.email "&lt;email&gt;"</p>
-		    	</div>
-		    	<span>This command is useful so that you don't have to type in your username and password everytime you push new changes.</span>
-		    	<br><br>
-		    	<div class="instruction-subtitle">
-		    		<p>git init</p>
-		    		<p>git remote add origin https://github.com/&lt;username&gt;/&lt;repository name&gt;</p>
-		    	</div>
-		    	<span>This command initiates the local repository in the folder just created and links it to the remote repository created in the first step.</span>
-		    	<br><br>
-		    	<div class="instruction-subtitle">
-			    	<p>touch README.md</p>
-			    	<p>git add README.md</p>
-			    </div>
-			    <span>The first command simply creates an empty README file, whereas the second one adds the file to be sent to the remote repository.</span>
-		    	<br><br>
-		    	<div class="instruction-subtitle">
-			    	<p>git commit -m "&lt;Comment&gt;"</p>
-			    	<p>git push -u master</p>
-		    	</div>
-		    	<span>Finally, a message is added to the commit, to make it easier to keep track of what happened in each change to the repository, and all the changes are sent (pushed) to the repository.</span>
-		    	<br><br>
-		    </div>
+				        <h4>2. Creating branches using the command line</h4>
+				      </div>
+				    </div>
+				  </div>
 
-		    <div id="existing-repo" class="step">
-		    	<h4>Existing Repository</h4>
-		    	<br>
-		    	<p>1. When there is already a repository up and running either created by you or someone else (you must be added as a collaborator though), firstly create a folder with the same name as the repository in the local machine.</p>
-		    	<p>2. Then, just clone the repository:</p>
-		    	<div class="instruction-subtitle">
-			    	<p>git clone https://github.com/&lt;username&gt;/&lt;repository name&gt;.git</p>
-		    	</div>
-		    </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingFour">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          Creating Tags <span class="label label-custom">GitHub</span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				      <div class="panel-body">
+				        <p></p>
+				        
+				      </div>
+				    </div>
+				  </div>
+				</div>
 
-		    <div id="github-pages" class="step">
-		    	<h4>Using GitHub Pages</h4>
-		    	<br>
-		    	<p>1. Create new branch in https://github.com/&lt;username&gt;/&lt;repository name&gt;</p>
-		    	<p>2. In the command line type:</p>
-		    	<div class="instruction-subtitle">
-			    	<p>git fetch</p>
-		    	</div>
-		    	<span>This command is necessary so that the local repository becomes aware of the new branch created.</span>
-		    	<br><br>
-		    	<div class="instruction-subtitle">
-			    	<p>git checkout gh-pages</p>
-			    	<p>git merge master</p>
-		    	</div>
-		    	<span>The first command changes the branch from master to gh-pages, and the second one merges the content updating gh-pages with all the files in master.</span>
-		    	<br><br>
-	    	</div>
+			</div>
 
-	    </div>
-    </div>
-
+			<div class="col-sm-1"></div>
+		
+		</div> <!-- .row -->
+	</div>	<!-- .container -->
 </body>
 
 

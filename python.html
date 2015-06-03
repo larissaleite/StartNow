@@ -75,8 +75,9 @@
 		color: #43a6e9;
 	}
 
-	.panel-body {
+	.instruction {
 		font-family: monospace;
+		color: white;
 	}
 </style>
 
@@ -106,17 +107,12 @@
 				    </div>
 				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 				      <div class="panel-body">
-				        pip install sqlalchemy
-				        <br/>
-						after mysqldb error:
-						<br/>
-						export PATH=$PATH:/usr/local/mysql/bin
-						<br/>
-						after libmysqlclient error:
-						<br/>
-						export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
-						<br/>
-						Link: <a href="http://blog.theshayan.com/2013/11/26/djangomysql-on-mac-os-x-mountain-lion/">Django MySQL Mac OS X</a>
+				        <p class="instruction">> pip install sqlalchemy</p>
+						<p>after mysqldb error:</p>
+						<p class="instruction">> export PATH=$PATH:/usr/local/mysql/bin</p>
+						<p>after libmysqlclient error:</p>
+						<p class="instruction">> export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/</p>
+						<p>Link: <a href="http://blog.theshayan.com/2013/11/26/djangomysql-on-mac-os-x-mountain-lion/">Django MySQL Mac OS X</a></p>
 				      </div>
 				    </div>
 				  </div>
